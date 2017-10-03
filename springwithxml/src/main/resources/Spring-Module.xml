@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	 <bean id="messageServiceImpl" class="com.springwithoutxml.service.MessageServiceImpl">
+   		<property name="textMessage" ref="textMessage" />
+   </bean>
+   <bean id="textMessage" class="com.springwithoutxml.model.TextMessage">
+   		<property name="to" value="Vijay" />
+   		<property name="from" value="Ankush" />
+   		<property name="text" value="Hi how are you?" />
+   </bean>
+
+</beans>
